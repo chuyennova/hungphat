@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr' xmlns:og='http://ogp.me/ns#' lang='vi'>
+  <head>
+  		<b:if cond='data:blog.pageType == &quot;index&quot;'>
+		<title><data:blog.pageTitle/></title>
+		<b:else/>
+		<title><data:blog.pageName/></title>
+		</b:if>
+		<!-- description-->
+		<b:include data='blog' name='all-head-content'/>
+		<link expr:href="data:blog.canonicalUrl" rel="canonical"/>
+		<meta expr:content='data:blog.metaDescription' name='description'/>
+		<!-- End description-->
+		<!-- Moderator facebook using id account facebook -->
+		<meta content='ID Apps Facebook' property='fb:app_id'/>		
+		<!-- Noindex for archive and support Respontive-->
+		<b:if cond='data:blog.pageType == &quot;archive&quot;'>
+		<meta content='noindex,noarchive' name='robots'/>
+		</b:if>
+		<meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
+		<!-- End Meta by Tu Cao -->		
+		<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!--[if (gte IE 6)&(lte IE 8)]>
+		  <script type="text/javascript" src="http://blogtipsntricks.googlecode.com/files/selectivizr-min.js"></script>
+		<![endif]--> 
+		<!--[if lt IE 9]>
+		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+		<![endif]-->		
+<b:skin>
+<![CDATA[
+//////////////////////////////////////////////////////////
+//                                                      //
+//  Blogger Template Style - FREE TEMPLATE              //
+//  Name       : Landing Page Blogspot 3S - Version 2.3 //
+//  Designer   : Tu Cao - Internet Marketing            //
+//  URL        : www.sudo.vn - nguyencaotu.com		    //
+//  License:GNU General Public License.                 //
+//                                                      //
+//////////////////////////////////////////////////////////
+/*Reset*/
+* {margin:0; padding:0 }
+body {color: #333333;background-color:#F3F3F3;font-family: sans-serif,Arial,Verdana,"Trebuchet MS";font-size: 15px;position:relative;line-height: 1.6em; margin:0;padding:0}
+ul,ol { margin-left:20px; }
+fieldset,img,abbr,acronym { border:0 }
+q:before,q:after { content:'' }
+/* Table */
+table{width:100%;border-left: 1px solid #666666;font-size: 13px;margin-top: 20px;margin-bottom:20px;border-collapse:collapse;}
+table td{border-bottom: 1px solid #666666;border-right:1px solid #666666;}
+table th,td {padding:5px;}
+tr:first-child {background-color: #3B5998;color:#FFFFFF;}
+tr:nth-child(2n) {background-attachment: scroll;background-clip: border-box;background-color: #FFFFFF;}
+hr { display:none; }
+.cl:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+.cl { display:inline-block; }
+* html .cl { height:1%; }
+.cl { display:block; }
+.post-title.entry-title {display: none;}
+.fl { float:left; }
+.fr { float:right; }
+/*End Reset*/
+.wrapper {background:url(https://lh3.googleusercontent.com/-B7gThs-kqZw/U4boNA0uNpI/AAAAAAAAAWY/RMaaxsLOSps/w347-h432-no/bg_main.jpg);background-origin: padding-box;background-position: 0 0;background-repeat: repeat-x;background-size: auto auto;height: auto;}
+.container{width:724px; margin:auto; min-height:500px; height:auto !important; position:relative;}
+/*CSS Body*/
+.content{background:#FFF; padding:10px;} 
+.header{text-algin:center;}
+#header-inner img {padding:0 !important; max-width:724px; max-height:240px;height:auto;}
+.content h1{font-size: 20px; text-transform: uppercase; padding:10px; color:#c1070c;}
+/* Heading */
+.content h2,h3{width:750px; background:url(https://lh6.googleusercontent.com/-9CuZasFrJ8g/VEkYtX17ecI/AAAAAAAAH-8/adIIVTJUFR4/w750-h45-no/blue-line.png) no-repeat; margin:10px 0 10px -23px;  text-align:center; color:#FFFFFF; font-size: 16px; text-transform: uppercase; padding:8px 0 20px 0;}
+p{margin-bottom:20px;}
+.comment{background:#FFF; margin: 10px 0; padding:10px;}
+.footer {width: 724px; background: none repeat scroll 0 0 #FFFFFF; overflow: hidden;}
+a:hover {color:#C1001F;}
+a {color:#E6462D; text-decoration:none}
+.shadow1{-webkit-box-shadow: inset 0px 0px 20px 1px rgba(0,0,0,0.5);
+-moz-box-shadow: inset 0px 0px 20px 1px rgba(0,0,0,0.5);
+box-shadow: inset 0px 0px 20px 1px rgba(0,0,0,0.5); border-radius: 4px;}
+/*CSS Footer*/
+.footer-left,.footer-right {float:left; display:inline-block; padding:10px; width:340px; background-color:#FFFFFF;}
+.blogcomment {font-size: 16px;line-height: 18px;}
+.menu {background-color: #3B5998; width:100%;}
+.menu ul {margin:0;padding:0;}
+.menu ul li {display: inline;list-style:none}
+.menu li a {color: #FFFFFF;line-height: 35px;margin-left: 10px;margin-right:10px;text-decoration:none;}
+.post-footer-line {display:none;}
+.menu h2 {display:none}
+@media screen and (max-width: 768px){
+img {width:100%; height:auto}
+.container {width:100%}
+.content h2, h3 {width:100%; margin:0;padding:0;background-color:#3B5998;}
+#comment-editor { margin: 10px; }
+#header-inner img{width:100%;height:auto;}
+.footer { float: none; width: 90%; margin: 15px 5%; }
+}
+@media screen and (max-width: 600px){
+.menu {display:none;}
+.comment,.addthis_counter_style,.footer-left {display:none}
+}
+@media screen and (max-width: 420px){
+.comment,.addthis_counter_style {display:none}
+.footer-right{width:90%;}
+}
+]]>
+</b:skin>
+  </head>
+  <body>
+    <div class='wrapper'>
+      <div class='container'>
+<!-- begin #logo -->
+<div class='header'>
+<b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
+  <b:widget id='Header1' locked='true' type='Header'>
+    <b:includable id='main'>
+  <b:if cond='data:useImage'>
+    <b:if cond='data:imagePlacement == &quot;REPLACE&quot;'>
+      <!--Show just the image, no text-->
+      <div id='header-inner'>
+        <a expr:href='data:blog.homepageUrl' style='display: block'>
+          <img class='headerlogoimg' expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_headerimg&quot;' expr:src='data:sourceUrl' expr:width='data:width' style='display: block;padding-left:0px;padding-top:20px;'/>
+        </a>
+      </div>
+    <b:else/>
+      <div expr:style='&quot;background-image: url(\&quot;&quot; + data:sourceUrl + &quot;\&quot;); &quot;                      + &quot;background-position: &quot;                      + data:backgroundPositionStyleStr + &quot;; &quot;                      + data:widthStyleStr                      + &quot;min-height: &quot; + data:height + &quot;px;&quot;                      + &quot;_height: &quot; + data:height + &quot;px;&quot;                      + &quot;background-repeat: no-repeat; &quot;' id='header-inner'>
+        <div class='titlewrapper' style='background: transparent'>
+          <h1 class='title' style='background: transparent; border-width: 0px'>
+            <b:include name='title'/>
+          </h1>
+        </div>
+        <b:include name='description'/>
+      </div>
+    </b:if>
+  <b:else/>
+    <!--No header image -->
+    <div id='header-inner'>
+      <div class='titlewrapper'>
+        <h1 class='title'>
+          <b:include name='title'/>
+        </h1>
+      </div>
+      <b:include name='description'/>
+    </div>
+  </b:if>
+</b:includable>
+    <b:includable id='description'>
+  <div class='descriptionwrapper'>
+    <span><data:description/></span>
+  </div>
+</b:includable>
+    <b:includable id='title'>
+<a expr:href='data:blog.homepageUrl'><data:title/></a>
+</b:includable>
+  </b:widget>
+</b:section>
+</div>
+<!-- end #logo -->		
+        <div class='menu shadow'>
+		  	 <b:section class='menu crosscol navigation' id='Thanh Menu' maxwidgets='1' showaddelement='yes'/>
+        </div>
+		<!-- Show content in HomePage -->
+		<b:if cond='data:blog.url == data:blog.homepageUrl'>			
+			<div class='content shadow'>
+				<b:section class='landingpage crosscol' id='Nội dung trang chủ' maxwidgets='1' showaddelement='yes'/>
+			</div>
+		</b:if>				 
+	<b:if cond='data:blog.pageType == "item"'>		
+        <div class='content shadow'>
+		<b:section class='main' id='main' showaddelement='yes'>
+			<b:widget id='Blog1' locked='true' title='Bài đăng trên Blog' type='Blog' visible='true'>
+               <b:includable id='main' var='top'>
+                <!-- Show posts -->
+                <div class='blog-posts hfeed'>
+                  <b:include data='top' name='status-message'/>
+                  <data:defaultAdStart/>
+                  <b:loop values='data:posts' var='post'>				  
+                    <b:if cond='data:post.isDateStart'>
+                      <b:if cond='data:post.isFirstPost == &quot;false&quot;'>
+                        &lt;/div&gt;&lt;/div&gt;
+	                   </b:if>
+                    </b:if>	
+                    <b:if cond='data:post.isDateStart'>
+                      &lt;div class=&quot;date-outer&quot;&gt;
+                    </b:if>
+                    <b:if cond='data:post.isDateStart'>
+                      &lt;div class=&quot;date-posts&quot;&gt;
+                    </b:if>
+					<b:if cond='data:post.dateHeader'>
+					  <h1 class='date-header'><data:post.title/></h1>
+					</b:if>					
+                    <div class='post-outer'>
+                      <b:include data='post' name='post'/>
+                      <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+                        <b:include data='post' name='comments'/>
+                      </b:if>
+                      <b:if cond='data:blog.pageType == &quot;item&quot;'>
+                        <b:include data='post' name='comments'/>
+                      </b:if>
+                    </div>
+                    <b:if cond='data:post.includeAd'>
+                      <b:if cond='data:post.isFirstPost'>
+                        <data:defaultAdEnd/>
+                        <b:else/>
+                        <data:adEnd/>
+                      </b:if>
+                      <div class='inline-ad'>
+                        <data:adCode/>
+                      </div>
+                      <data:adStart/>
+                    </b:if>
+                    <b:if cond='data:post.trackLatency'>
+                      <data:post.latencyJs/>
+                    </b:if>
+                  </b:loop>
+                  <b:if cond='data:numPosts != 0'>
+                    &lt;/div&gt;&lt;/div&gt;
+                  </b:if>
+                  <data:adEnd/>
+					  <!-- share buttons -->
+					  <div class='post-share-buttons goog-inline-block'>
+						<b:include cond='data:post.sharePostUrl' data='post' name='shareButtons'/>
+					  </div>				  
+                </div>
+                <div class='clear'/>
+              </b:includable>
+		</b:widget>
+          </b:section>  
+		</div>
+	</b:if>		
+        <div class='content shadow'>	
+		<b:section class='contact crosscol' id='Nội dung dưới mỗi bài viết' maxwidgets='10' title='Địa chỉ liên hệ' lock='false' showaddelement='yes' type='HTML'/>
+		</div>
+	<b:include data='blog' name='all-head-content'/>
+        <div class='comment shadow'>
+          <p class='blogcomment'>Bình luận Facebook</p>
+		  <div class='fb-comments' data-num-posts='10' data-width='710' expr:href='data:blog.canonicalUrl' />
+          </div>
+        <div class='footer shadow'>
+		  	 <b:section class='footer-left crosscol' id='Footer cột trái' maxwidgets='5' title='Bản quyền' showaddelement='yes' type='HTML'/>
+		  	 <b:section class='footer-right crosscol' id='Footer cột phải' maxwidgets='5' title='Bài viết mới nhất' showaddelement='yes' type='Feed'/>
+        </div>
+      </div>
+    </div>	
+    <!-- AddThis Button BEGIN -->
+    <div class='addthis_toolbox addthis_floating_style addthis_counter_style' style='right:50px;top:100px;'>
+      <a class='addthis_button_google_plusone' g:plusone:size='tall'>
+      </a>
+      <a class='addthis_button_facebook_like' fb:like:layout='box_count'>
+      </a>
+      <a class='addthis_button_tweet' tw:count='vertical'>
+      </a>
+    </div>
+    <script src='//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-52389aec7d4dd895' type='text/javascript'>
+    </script>
+    <!-- AddThis Button END -->
+    <div id='fb-root'>
+    </div>
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = &quot;//connect.facebook.net/en_US/all.js#xfbml=1&quot;;
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, &#39;script&#39;, &#39;facebook-jssdk&#39;));
+	</script>
+  </body>
+</html>
