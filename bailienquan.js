@@ -1,7 +1,7 @@
-//
-$.ajax({
+//<![CDATA[
+    $.ajax({
       type: 'GET',
-      url: '/feeds/posts/default/-/ban-may-photocopy',
+      url: 'https://hungphatphotocopy.blogspot.com/feeds/posts/default/-/ban-may-photocopy',
       data: {
         'max-results': 4,
         'alt': 'json'
@@ -49,3 +49,4 @@ $.ajax({
         }
       }
     })
+//]]>
