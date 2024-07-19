@@ -1,6 +1,7 @@
+//<![CDATA[
     $.ajax({
       type: 'GET',
-      url: '/feeds/posts/default/-/thue-may-photocopy',
+      url: '/feeds/posts/default/-/ban-may-photocopy',
       data: {
         'max-results': 4,
         'alt': 'json'
@@ -43,8 +44,9 @@
               }
               var post_summary = post_snippet.substring(0, quoteEnd);
             }
-            $('.row-thue').append('<div class="col-md-3 col-sm-6 col-xs-12"><div class="team-item thumbnail"><a class="thumb-info team" href="'+entry_alternate+'"><img src="'+entry_thumb+'" alt="'+entry_title+'"><span class="thumb-info-title"><span class="thumb-info-inner">'+entry_title+'</span></span></a></div></div>');
+            $('.row-ban').append('<div class="col-md-3 col-sm-6 col-xs-12"><div class="team-item thumbnail"><a class="thumb-info team" href="'+entry_alternate+'"><img src="'+entry_thumb+'" alt="'+entry_title+'"><span class="thumb-info-title"><span class="thumb-info-inner">'+entry_title+'</span></span></a></div></div>');
           }
         }
       }
     })
+//]]>
