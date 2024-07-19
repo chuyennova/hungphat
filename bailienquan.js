@@ -1,4 +1,4 @@
-//<![CDATA[
+<![CDATA[
     $.ajax({
       type: 'GET',
       url: '/feeds/posts/default/-/ban-may-photocopy',
@@ -49,4 +49,4 @@
         }
       }
     })
-//]]>
+]]>
