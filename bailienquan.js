@@ -1,4 +1,5 @@
-    $.ajax({
+//
+$.ajax({
       type: 'GET',
       url: '/feeds/posts/default/-/ban-may-photocopy',
       data: {
@@ -48,3 +49,4 @@
         }
       }
     })
+;
