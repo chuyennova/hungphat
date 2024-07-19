@@ -1,4 +1,3 @@
-<![CDATA[
     $.ajax({
       type: 'GET',
       url: '/feeds/posts/default/-/thue-may-photocopy',
